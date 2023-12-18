@@ -1,0 +1,230 @@
+
+/**
+  * Template Name: Taz-mobile
+  * Updated: Dec 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://devmasirul.com/imagesai/
+  * Author: devmasirul.com
+  * License: https://devmasirul.com/license/
+*/
+
+
+
+/*--------------------------------------------------------------
+# General area
+--------------------------------------------------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Genaral */
+
+body {
+  background:#fff;
+}
+
+a{
+  text-decoration: none;
+}
+.mt-110{
+  margin-top: 110px;
+}
+.mt-120{
+  margin-top: 120px;
+}
+.mt-150{
+  margin-top: 150px;
+}
+.mt-200{
+  margin-top: 200px;
+}
+.mt-250{
+  margin-top: 250px;
+}
+.ml-50{
+  margin-left: 50px;
+}
+.ml-80{
+  margin-left: 80px;
+}
+.ml-100{
+  margin-left: 100px;
+}
+.ml-150{
+  margin-left: 150px;
+}
+.ml-180{
+  margin-left: 180px;
+}
+.ml-200{
+  margin-left: 200px;
+}
+.ml-250{
+  margin-left: 250px;
+}
+.w-55{
+  width: 55%;
+}
+.w-45{
+  width: 45%;
+}
+.w-40{
+  width: 40%;
+}
+
+
+.bg-green{
+  background: #64CD78;
+}
+.text-green{
+  fill: #64CD78;
+  color: #fff;
+}
+section{
+  margin-top: 65px!important;
+  margin-bottom: 65px!important;
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+}
+
+.fade-right-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fadeRight 1s linear;
+}
+
+/* TOPBAR AREA */
+.topbar{
+  padding: 10px 10px;
+  background: #f6f5f9;
+}
+
+.topbar .icon i{
+  margin-right: 3px;
+  color: yellow;
+  font-size: 30px;
+}
+.topbar .text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+/* navbar */
+.header-nav .center  .icon-whatsapp{
+  position: relative;
+}
+.header-nav .center i{
+  position: absolute;
+  top: 0;
+  transform: translateX(-10%);
+  font-size: 36px;
+  padding: 0px;
+  border-radius: 50%!important;
+}
+.header-nav .center h5{
+  font-family: 'lato',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.header-nav .right .icons i{
+  background: #f5f6f9;
+  padding: 3px;
+  border-radius: 50%;
+}
+.dropdown{
+position: relative;
+}
+.dropdown-menu{
+  transform: translateX(-30%)!important;
+  position: absolute;
+  padding: 10px 3px!important;
+}
+
+.dropdown-menu .dropdown-item{
+}
+
+
+
+
+/* HERO AREA */
+
+.hero-area .hero-left{
+  border: 1px solid #64CD78;
+}
+
+
+/* SLICK SLIDER */
+
+.slick-slider {
+  width: 97%;
+  margin: auto;
+}
+
+.slick-slide {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+
+.slick-prev, .slick-next {
+  background-color: #000!important; /* Change this to your desired background color */
+  color: #fff!important; /* Change this to your desired text color */
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+/* FOOTER */
+.footer{
+  background:#D0F2F1;
+}
+/* Responsive */
+@media only screen and (max-width: 767.97px){
+
+  .topbar .icon i{
+    font-size: 15px;
+  }
+
+  .topbar .text{
+    font-size: 15px;
+  }
+
+  .header-nav .center{
+     display: none!important;
+    }
+
+    .dropdown-menu{
+      transform: translateX(-60%)!important;
+      position: absolute;
+      padding: 10px 3px!important;
+    }
+
+    .slick-slider {
+      width: 93%;
+    }
+    
+}
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Slider with Controller</title>
+  
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <!-- Include Slick CSS and JS files -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Your custom styles go here -->
+  <style>
+    body{
+        background: #FF0000;
+    }
+    .your-slider {
+      width: 80%;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slick Slider HTML -->
+  <div class="your-slider">
+    <div>Slide 1 content</div>
+    <div>Slide 2 content</div>
+    <div>Slide 3 content</div>
+    <div>Slide 1 content</div>
+    <div>Slide 2 content</div>
+    <div>Slide 3 content</div>
+    <div>Slide 1 content</div>
+    <div>Slide 2 content</div>
+    <div>Slide 3 content</div>
+    <div>Slide 1 content</div>
+    <div>Slide 2 content</div>
+    <div>Slide 3 content</div>
+    <div>Slide 1 content</div>
+    <div>Slide 2 content</div>
+    <div>Slide 3 content</div>
+    <div>Slide 1 content</div>
+    <div>Slide 2 content</div>
+    <div>Slide 3 content</div>
+  </div>
+
+  <!-- Initialize Slick Slider with navigation controls -->
+  <script>
+    $(document).ready(function(){
+      $('.your-slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next">Next</button>',
+        responsive: [
+          {
+            breakpoint: 768, // Medium devices (tablets, 768px and up)
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 576, // Small devices (phones, 576px and up)
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+</html>
