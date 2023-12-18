@@ -80,9 +80,8 @@ a{
 .bg-green{
   background: #64CD78;
 }
-.text-green{
-  fill: #64CD78;
-  color: #fff;
+.text-green{  
+  color: #64CD78;
 }
 section{
   margin-top: 65px!important;
@@ -193,6 +192,40 @@ position: relative;
   border-radius: 50%;
 }
 
+
+
+/* CTA SECTION */
+ .card-left{
+  background:#fff;
+  border: 1px solid #64CD78;
+  border-radius: 10px;
+  position: relative;
+  transform: translateX(20%);
+  z-index:1;
+}
+
+.card-left h1{
+  font-family: 'lato',sans-seif;
+  font-size: 78px;
+  font-weight:700;
+}
+.card-left h3{
+  font-family: 'lato',sans-seif;
+  font-size: 52px;
+  font-weight:400;
+}
+.card-left h3{
+  
+}
+.card-left .icon-whatsapp {
+  position: relative;
+}
+.card-left .icon-whatsapp .img img{
+  position: absolute;
+  top:-65%;
+  transform: translateX(-45%);
+  z-index: 3;
+}
 
 /* FOOTER */
 .footer{
