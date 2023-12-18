@@ -204,7 +204,7 @@ position: relative;
   z-index:1;
 }
 
-.card-left .card-btn {
+.card-btn {
  padding-top: 5px;
  padding-bottom: 5px;
  padding-left: 55px;
@@ -214,8 +214,9 @@ position: relative;
  color: #fff;
 }
 
-.card-left .card-btn:hover {
-  color: #000;
+.card-btn:hover {
+  background: #02a01f;;
+  color: #fff;
  }
 
 .card-left h1{
@@ -231,10 +232,10 @@ position: relative;
 .card-left h3{
   
 }
-.card-left .icon-whatsapp {
+.icon-whatsapp {
   position: relative;
 }
-.card-left .icon-whatsapp .img img{
+.icon-whatsapp .img img{
   position: absolute;
   top:-65%;
   transform: translateX(-45%);
