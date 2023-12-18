@@ -200,7 +200,7 @@ position: relative;
   border: 1px solid #64CD78;
   border-radius: 10px;
   position: relative;
-  transform: translateX(20%);
+  transform: translateX(5%);
   z-index:1;
 }
 
@@ -253,6 +253,30 @@ position: relative;
   background: #64CD78;;
   color: #fff;
 }
+
+/* SERVICE SECTION */
+.service-btn{
+  border: 1px solid #64CD78;
+  background: #64CD78;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+
+.service-btn:hover {
+  border: 1px solid #64CD78;
+  background: #17df3b;
+  color: #fff;
+}
+
+.card-details{
+  top:80%;
+  transform: translateX(7%);
+}
+
+
+
 /* FOOTER */
 .footer{
   background:#D0F2F1;
