@@ -275,7 +275,10 @@ position: relative;
   transform: translateX(7%);
 }
 
-
+.slider-details{
+  top:45%;
+  transform: translateX(15%);
+}
 
 /* FOOTER */
 .footer{
