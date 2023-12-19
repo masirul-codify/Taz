@@ -19,6 +19,7 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"/>
   <!-- Include Slick CSS files -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -68,17 +69,17 @@
         <nav class="navbar navbar-expand-lg bg-white shadow-sm">
           <div class="container">
             <a class="navbar-brand" href="#">
-              <img src="./assets/images/logo.png" alt="logo">
+              <img src="./assets/images/logo.png" class="img-fluid w-50 h-auto" alt="logo">
             </a>
     
-            <div class="center d-flex align-items-center justify-content-center">
+            <div class="center me-auto d-flex align-items-center justify-content-start">
               <h5 class="mx-3">Besoin d’aide :</h5>
 
               <div class="button-and-text d-flex align-items-end my-4">
                 <div class="icon-whatsapp">
-                  <button class="card-btn  bg-green">00 34 674 42 08 73</button>
-                  <div class="img px-3">
-                    <img src="assets/images/whatsapp.png" class="img-fluid rounded-5">
+                  <button class="topbar-card-btn rounded-start-5 bg-green">00 34 674 42 08 73</button>
+                  <div class="topbar-img px-3">
+                    <img src="assets/images/whatsapp.png" class="img-fluid w-25 h-auto rounded-5">
                   </div>
                 </div> 
               </div>
@@ -86,7 +87,12 @@
             </div>
             <div class="right d-flex align-items-center">
               <div class="icons d-flex">
-                <div class="icon-1"><i class="bi bi-cart-fill fs-4"></i></div>
+                <div class="icon-1">
+                  <a href="#" class="notification">
+                  <span><i class="bi bi-cart-fill text-dark fs-4"></i> </span>
+                  <span class="badge">1</span>
+                </a>
+                </div>
                 <div class="icon-1"><i class="bi bi-person-check fs-4 mx-3"></i></div>
               </div>
               <div class="btn-group dropdown">
@@ -94,20 +100,20 @@
                   <i class="bi bi-justify"></i>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Activities</a></li>
-                  <li><a class="dropdown-item" href="#">Carte</a></li>
-                  <li><a class="dropdown-item" href="#">Villes</a></li>
-                  <li><a class="dropdown-item" href="#">Plages</a></li>
-                  <li><a class="dropdown-item" href="#">Voyage</a></li>
-                  <li><a class="dropdown-item" href="#">Hotels</a></li>
-                  <li><a class="dropdown-item" href="#">Météo</a></li>
-                  <li><a class="dropdown-item" href="#">Quoi faire à Tenerife</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d1.png" class="img-fluid" alt="img"></img> Activities</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d2.png" class="img-fluid" alt="img"></img> Carte</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d3.png" class="img-fluid" alt="img"></img> Villes</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d4.png" class="img-fluid" alt="img"></img> Plages</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d5.png" class="img-fluid" alt="img"></img> Voyage</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d6.png" class="img-fluid" alt="img"></img> Hotels</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d7.png" class="img-fluid" alt="img"></img> Météo</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="assets/images/d1.png" class="img-fluid" alt="img"></img> Quoi faire à Tenerife</a></li>
                   <li><a class="dropdown-item" href="#">                  
                     <select class="form-select" aria-label="Default select example">
-                    <option selected>Langue : Fr </option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected><img src="assets/images/d8.png" class="img-fluid" alt="img"></img> Langue : Fr </option>
+                    <option value="1"><img src="assets/images/d8.png" class="img-fluid" alt="img"></img> One</option>
+                    <option value="2"><img src="assets/images/d8.png" class="img-fluid" alt="img"></img> Two</option>
+                    <option value="3"><img src="assets/images/d8.png" class="img-fluid" alt="img"></img> Three</option>
                   </select>
                   </a></li>
 
@@ -131,49 +137,56 @@
 <div class="hero-area">
   <div class="container">
     <div class="row">
-            <div class="col-12 col-lg-6 col-md-6">
+      <div class="icon py-3"><i class="bi bi-house-door-fill"></i> Accueil > <b class="bold"> Activités à Tenerife </b> </div>
+    </div>
+    <div class="row">
+            <div class="col-12 col-lg-7 col-md-6">
               <div class="card-left mb-3 p-lg-5 p-2">
                 <h1 class="fw-bold text-dark">Prêt à vous créer des souvenirs
                   impérissables entre amis ?.</h1>
-                  <h3 class="py-5">En couple, en solo, en famille ou entre amis,
+                  <h3 class="py-2">En couple, en solo, en famille ou entre amis,
                     réservez rapidement et facilement votre activité
                     directement sur <span class="text-green"> whatsapp </span>.</h3>
-                    <div class="button-and-text d-flex align-items-end my-4">
+                    <div class="button-and-text d-flex align-items-end mt-3">
                       <div class="icon-whatsapp">
                         <button class="card-btn  bg-green">00 34 674 42 08 73</button>
                         <div class="img px-3">
-                          <img src="assets/images/whatsapp.png" class="img-fluid rounded-5">
+                          <img src="assets/images/whatsapp.png" class="img-fluid w-25 h-auto rounded-5">
                         </div>
                       </div>
                       <h6 class="mx-3 text-secondary">Service <span class="fw-bold">GRATUIT</span></h6>
                     </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6 col-md-6">
-              <div class="card-right">
+            <div class="col-12 col-lg-5 col-md-6">
+              <div class="card-right position-relative">
                 <div class="hero-img">
-                  <img src="assets/images/image-074.jpg" style="height: 530px;" class="img-fluid fs-1" alt="">
+                  <img src="assets/images/image-074.jpg" style="height: 430px;" class="img-fluid fs-1" alt="">
+                </div>
+                
+                <div class="play-button position-absolute">
+                  <div class="play-icon"></div>
                 </div>
               </div>
             </div>
     </div>
-    <div class="row">
-      <div class="col-12 col-lg-4 col-md-4">
-        <div class="hero-bottom d-flex align-items-center">
-          <div><i class="bi bi-check2-circle bg-green mx-2 rounded-5 fs-4"></i> </div>
-          <h6>Meilleur prix vérifié</h6>
+    <div class="row mx-auto">
+      <div class="col-12 col-lg-3 col-md-4">
+        <div class="hero-bottom d-flex align-items-center justify-content-center">
+          <div><img src="assets/images/list-icon1.png" class="img-fluid w-50 h-auto" alt=""></img> </div>
+          <h6 class="mt-2">Meilleur prix vérifié</h6>
         </div>
       </div>
       <div class="col-12 col-lg-4 col-md-4">
-        <div class="hero-bottom d-flex align-items-center">
-          <div><i class="bi bi-check2-circle bg-green mx-2 rounded-5 fs-4"></i> </div>
-          <h6>SAV Français : 00 34 674 42 08 73</h6>
+        <div class="hero-bottom d-flex align-items-center justify-content-center">
+          <div><img src="assets/images/list-icon2.png" class="img-fluid w-50 h-auto" alt=""></img> </div>
+          <h6 class="mt-2">SAV Français : 00 34 674 42 08 73</h6>
         </div>
       </div>
-      <div class="col-12 col-lg-4 col-md-4">
-        <div class="hero-bottom d-flex align-items-center">
-          <div><i class="bi bi-check2-circle bg-green mx-2 rounded-5 fs-4"></i> </div>
-          <h6>Réservation instantanée</h6>
+      <div class="col-12 col-lg-3 col-md-4">
+        <div class="hero-bottom d-flex align-items-center justify-content-center">
+          <div><img src="assets/images/list-icon3.png" class="img-fluid w-50 h-auto" alt=""></img> </div>
+          <h6 class="mt-2">Réservation instantanée</h6>
         </div>
       </div>
     </div>
@@ -192,122 +205,175 @@
           <div class="col-12 col-lg-12">
             <!-- Slick Slider HTML -->
             <div class="slick-slider">
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Jet ski
-                    Tenerife</h2>
+              <div class="card  mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s1.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div>  
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Quad
-                    Tenerife
-                    </h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s2.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-074.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Saut en
-                    Parachute</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-074.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s3.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-075.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Massage
-                    Tenerife</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-075.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s4.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-076.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Zoo
-                    Tenerife</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-076.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s5.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Excursions
-                    en Bus</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s6.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div>  
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Surf
-                    Tenerife
-                    </h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s7.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Jet ski
-                    Tenerife</h2>
+              <div class="card  mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s1.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div>  
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Quad
-                    Tenerife
-                    </h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s2.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-074.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Saut en
-                    Parachute</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-074.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s3.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-075.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Massage
-                    Tenerife</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-075.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s4.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-076.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Zoo
-                    Tenerife</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-076.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s5.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
               </div> 
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Excursions
-                    en Bus</h2>
+              <div class="card mt-3" style="width: 18rem;height: 150px;">
+                <div class="card-content">
+                  <img src="assets/images/image-071.jpg" style="height: 150px;" class="card-img-top" alt="img">
+  
+                  <div class="slider-details position-absolute">
+                    <h2 class="text-white">Jet ski
+                      Tenerife</h2>
+                  </div>
+                  <div class="card-image">
+                    <img src="assets/images/s6.png" class="img-fluid rounded-circle" alt="">
+                  </div>
                 </div>
-              </div>  
-              <div class="card" style="width: 18rem;height: 150px;">
-                <img src="assets/images/image-024.jpg" style="height: 150px;" class="card-img-top" alt="img">
-
-                <div class="slider-details position-absolute">
-                  <h2 class="text-white">Surf
-                    Tenerife
-                    </h2>
-                </div>
-              </div> 
+              </div>   
             </div>
           </div>
       </div>
@@ -319,10 +385,10 @@
     <!-- =================
     FEATURE SECTION START
     =================== -->
-      <section class="">
+      <section class="feature">
         <div class="container">
           <div class="row">
-            <h1 class="text-center">Découvrez les meilleures expériences de Tenerife</h1>
+            <h1 class="text-center title">Découvrez les meilleures expériences de Tenerife</h1>
           </div>
         </div>
       </section>
@@ -348,7 +414,7 @@
                       <div class="icon-whatsapp">
                         <button class="card-btn  bg-green">00 34 674 42 08 73</button>
                         <div class="img px-3">
-                          <img src="assets/images/whatsapp.png" class="img-fluid rounded-5">
+                          <img src="assets/images/whatsapp.png" class="img-fluid  w-25 h-auto rounded-5">
                         </div>
                       </div>
                       <h6 class="mx-3 text-secondary">Service <span class="fw-bold">GRATUIT</span></h6>
@@ -356,9 +422,9 @@
               </div>
             </div>
             <div class="col-12 col-lg-6 col-md-6">
-              <div class="card-right">
-                <div class="hero-img">
-                  <img src="assets/images/image-136.jpg" style="height: 580px;" class="img-fluid fs-1" alt="">
+              <div class="card-right position-relative">
+                <div class="hero-img position-absolute">
+                  <img src="assets/images/image-136.jpg" style="height: 630px;" class="img-fluid fs-1" alt="">
                 </div>
               </div>
             </div>
@@ -474,9 +540,9 @@
               </div>
             </div>
             <div class="col-12 col-lg-6 col-md-6">
-              <div class="card-right">
-                <div class="hero-img">
-                  <img src="assets/images/image-044.jpg" style="height: 650px;" class="img-fluid fs-1" alt="">
+              <div class="card-right position-relative">
+                <div class="hero-img position-absolute">
+                  <img src="assets/images/image-044.jpg" style="height: 730px;" class="img-fluid fs-1" alt="">
                 </div>
               </div>
             </div>
@@ -499,16 +565,22 @@
       <div class="container">
         <div class="row py-5">
           <div class="col-12 col-lg-4 col-md-4">
-            <h6>Mentions Legalis</h6>
-            <h6>CGV</h6>
-            <h6>Donnes Personalles</h6>
-            <h6>Contacttez-nous</h6>
-            <h6>Avis</h6>
-            <h6>A Propos</h6>
+            <a href="#"> <h6 class="text-dark">Mentions Legalis</h6> </a>
+            <a href="#"> <h6 class="text-dark">CGV</h6> </a>
+            <a href="#"> <h6 class="text-dark">Donnes Personalles</h6> </a>
+            <a href="#"> <h6 class="text-dark">Contacttez-nous</h6> </a>
+            <a href="#"> <h6 class="text-dark">Avis</h6> </a>
+            <a href="#"> <h6 class="text-dark">A Propos</h6> </a>
+            
+            
+            
+            
+            
+            
           </div>
           <div class="col-12 col-lg-4 col-md-4">
             <div class="img mt-5">
-              <img src="assets/images/logo.png" class="img-fluid mb-4" alt="">
+              <img src="assets/images/logo.png" class="img-fluid mb-4 w-50 h-auto" alt="">
               <h6> &copy TenerifeAZ. 2023 Tous droits reserves</h6>
             </div>
           </div>
@@ -516,10 +588,10 @@
             <div class="card bg-white shadow-sm p-4">
               <h3 class="mb-3"> Retrovouez nous dur les reseaux</h3>
               <div class="icons d-flex align-items-center justify-content-start ">
-                <div><i class="bi bi-facebook mx-3 fs-3"></i></div> 
-                <div><i class="bi bi-facebook mx-3 fs-3"></i></div> 
-                <div><i class="bi bi-facebook mx-3 fs-3"></i></div> 
-                <div><i class="bi bi-facebook mx-3 fs-3"></i></div> 
+                <div> <a href="#"> <i class="bi bi-facebook mx-3 fs-3 text-dark"></i> </a> </div> 
+                <div> <a href="#"> <i class="bi bi-facebook mx-3 fs-3 text-dark"></i> </a> </div> 
+                <div> <a href="#"> <i class="bi bi-facebook mx-3 fs-3 text-dark"></i> </a>  </div> 
+                <div> <a href="#"> <i class="bi bi-facebook mx-3 fs-3 text-dark"></i> </a> </div> 
               </div>
             </div>
           </div>

@@ -121,13 +121,52 @@ section{
   font-size: 30px;
 }
 .topbar .text{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
   text-decoration: underline;
   font-size: 30px;
+  color: #255783;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.notification {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: red;
+  color: white;
+}
+
+.topbar-card-btn{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 45px;
+  font-size: 12px;
+  border-radius:5px;
+  border: 1px solid #64CD78;
+  color: #fff;
+ }
+
+.icon-whatsapp .topbar-img img{
+  position: absolute;
+  top:-25%;
+  transform: translateX(283%);
+  z-index: 3;
 }
 
 /* navbar */
+..navbar-brand{
+  margin-right: 5px!important;
+}
 .header-nav .center  .icon-whatsapp{
   position: relative;
 }
@@ -172,6 +211,47 @@ position: relative;
 }
 
 
+.play-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translateX(-45%);
+  animation: pulse 1.5s infinite;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #fff;
+}
+
+.play-button:hover {
+  animation: none;
+  background-color: #2980b9;
+  transform: translateX(0%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* SLICK SLIDER */
 
 .slick-slider {
@@ -220,9 +300,11 @@ position: relative;
  }
 
 .card-left h1{
-  font-family: 'lato',sans-seif;
-  font-size: 40px;
-  font-weight:700;
+  font-size: 50px!important;
+  line-height: 52px!important;
+  color: #4b5a5d!important;
+  font-weight: 700!important;
+  font-family: "Lato"!important;
 }
 .card-left h3{
   font-family: 'lato',sans-seif;
@@ -237,10 +319,11 @@ position: relative;
 }
 .icon-whatsapp .img img{
   position: absolute;
-  top:-65%;
-  transform: translateX(-45%);
+  top:-35%;
+  transform: translateX(-75%);
   z-index: 3;
 }
+
 
 .btn-common {
   border: 1px solid #64CD78;
@@ -271,6 +354,8 @@ position: relative;
   color: #fff;
 }
 
+
+/* SLIDER */
 .card-details{
   top:80%;
   transform: translateX(7%);
@@ -280,6 +365,35 @@ position: relative;
   top:45%;
   transform: translateX(15%);
 }
+
+.card{
+  border: 0px!important;
+}
+.card-content{
+ position: relative;
+}
+
+.card-image{
+  position: absolute;
+  top: -20px;
+  right: 0;
+  z-index: 9;
+}
+
+
+
+
+/* FEATURE */
+.feature .title{
+  font-size: 50px;
+  line-height: 39px;
+  color: #255783;
+  font-weight: 700;
+  font-family: 'Lato',sans-serif;
+}
+
+
+
 
 /* FOOTER */
 .footer{
@@ -314,6 +428,7 @@ position: relative;
 
     .slick-slider {
       width: 93%;
+      height: 500px!important;
     }
     
 
@@ -331,6 +446,8 @@ position: relative;
       padding-left: 55px;
       font-size: 12px;
     }
+
+    
     .card-left h6{
       font-size: 12px;
     }
