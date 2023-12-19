@@ -76,7 +76,9 @@ a{
   width: 40%;
 }
 
-
+.bg-sky{
+  background: #15d6d5;;
+}
 .bg-green{
   background: #64CD78;
 }
@@ -84,8 +86,8 @@ a{
   color: #64CD78;
 }
 section{
-  margin-top: 65px!important;
-  margin-bottom: 65px!important;
+  margin-top: 15px!important;
+  margin-bottom: 15px!important;
 }
 
 @keyframes fadeRight {
@@ -391,9 +393,16 @@ position: relative;
   font-weight: 700;
   font-family: 'Lato',sans-serif;
 }
+/* INPUT FIELD */
+.custom-input {
+  background-color: #F7F6F9;
+  color: #000; 
+}
 
-
-
+.custom-input::placeholder {
+  color: #000;
+  opacity: 1;
+}
 
 /* FOOTER */
 .footer{
