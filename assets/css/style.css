@@ -192,7 +192,7 @@ section{
 .right-nav-img{
   width: 100%!important;
   width: 55px!important;
-  height:35px;
+  height:45px;
   text-align: center;
 }
 
@@ -488,7 +488,7 @@ position: relative;
   .right-nav-img{
     width: 100%!important;
     width: 55px!important;
-    height:40px;
+    height:50px;
     text-align: center;
   }
 
@@ -585,16 +585,16 @@ position: relative;
 
 
 
-@media screen and (max-width: 319px) {
+@media only screen and  (max-width: 476px) {
   .navbars a.logo {
-    width: 75%!important;
+    width: 100%!important;
     font-weight: bold;
   }
 
   .right-nav-img{
     width: 100%!important;
-    width: 55px!important;
-    height:35px;
+    width: 325px!important;
+    height:45px;
     text-align: center;
   }
 
@@ -607,4 +607,36 @@ position: relative;
   .navbars-right {
     float: none;
   }
+}
+
+
+@media only screen and  (max-width: 400px) {
+  .navbars a.logo {
+    width: 100%!important;
+    font-weight: bold;
+  }
+
+  .right-nav-img{
+    width: 100%!important;
+    width: 525px!important;
+    height:45px;
+    text-align: center;
+  }
+
+}
+
+
+@media only screen and  (max-width: 365px) {
+  .navbars a.logo {
+    width: 100%!important;
+    font-weight: bold;
+  }
+
+  .right-nav-img{
+    width: 100%!important;
+    width: 825px!important;
+    height:45px;
+    text-align: center;
+  }
+
 }
