@@ -404,6 +404,21 @@ position: relative;
   opacity: 1;
 }
 
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-left: 2.5em; /* Adjust as needed */
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+}
 /* FOOTER */
 .footer{
   background:#D0F2F1;

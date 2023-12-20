@@ -393,34 +393,290 @@
           <div class="row row-cols-1 row-cols-lg-3">
             <div class="col">  
               <div class="input-group mb-2">
-                <span class="input-group-text custom-input"><i class="bi bi-funnel-fill text-dark"></i></span>
-              <input type="text" class="form-control custom-input" id="exampleInput" placeholder="Filtrer les activités">
+                <span class="input-group-text custom-input"><img src="assets/images/search.png" class="img-fluid" alt=""></span>
+              <input type="text" class="form-control custom-input py-3" id="exampleInput" placeholder="Filtrer les activités">
               </div>
              </div>
              <div class="col d-flex mb-2">
-              <div class="bg-dark p-2"> <img src="assets/images/apps.png" class="img-fluid" alt="img"></div>
-              <div class="bg-dark p-2 mx-2 text-white"> <img src="assets/images/list.png" class="img-fluid" alt="img"></div>
+              <div class="  text-center"> <img src="assets/images/apps.png" class="img-fluid" alt="img"></div>
+              <div class="  mx-2 text-center"> <img src="assets/images/list.png" class="img-fluid" alt="img"></div>
               <select class="form-select">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>Par catégories</option>
+                <option value="1">Bestsellers</option>
+                <option value="2">Activités Nautiques</option>
+                <option value="3">Sensations Fortes</option>
+                <option value="3">Excursion & Detenties</option>
+                <option value="3">Parcs d’attraction & Zoo</option>
+                <option value="3">Excursions ans Bus</option>
               </select>
              </div>
-             <div class="col mb-2">  
-              <div class="input-group">
-                <span class="input-group-text custom-input"><i class="bi bi-search"></i></span>
-              <input type="text" class="form-control custom-input" id="exampleInput" placeholder="Quelle activité souhaitez-vous vivre à Tenerife ?">
+             <div class="col mb-2">   
+              <div class="form-group input-with-icon"> 
+              <div class="input-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <input type="text" class="form-control rounded-pill py-3" id="exampleInput" placeholder="Quelle activité souhaitez-vous vivre à Tenerife ?
+              ">
+            </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-3 col-md-6">
+                <div> <i class="bi bi-geo-alt"></i> Destination</div>
+                <div class="my-2"><button class="btn btn-secondary">Toutes les destinations</button> </div>
+                <h6>Tenerife Sud</h6>
+                <div class="my-2">
+                  <button class="btn btn-outline-secondary m-1">Los Gigantes</button> 
+                  <button class="btn btn-outline-secondary m-1">Costa Adeje</button> 
+                  <button class="btn btn-outline-secondary m-1">Güímar</button> 
+                  <button class="btn btn-outline-secondary m-1">Adeje</button> 
+                  <button class="btn btn-outline-secondary m-1">Los Cristianos</button> 
+                  <button class="btn btn-outline-secondary m-1">La Caleta</button> 
+                  <button class="btn btn-outline-secondary m-1">El Medano</button> 
+                  <button class="btn btn-outline-secondary m-1">Puerto de Santiago</button> 
+                  <button class="btn btn-outline-secondary m-1">Las Américas</button> 
+                  <button class="btn btn-outline-secondary m-1">Granadilla de Abona</button> 
+                  <button class="btn btn-outline-secondary m-1">Alcala</button> 
+                  <button class="btn btn-outline-secondary m-1">Las Galletas</button> 
+                </div>
+                <h6>Tenerife Nord</h6>
+                <div class="my-2">
+                  <button class="btn btn-outline-secondary m-1">Icod de los Vinos</button> 
+                  <button class="btn btn-outline-secondary m-1">Santa Cruz de Tenerife</button> 
+                  <button class="btn btn-outline-secondary m-1">Masca</button> 
+                  <button class="btn btn-outline-secondary m-1">Candelaria</button> 
+                  <button class="btn btn-outline-secondary m-1">La Orotava</button> 
+                  <button class="btn btn-outline-secondary m-1">Tegueste</button> 
+                  <button class="btn btn-outline-secondary m-1">Garachico</button> 
+                  <button class="btn btn-outline-secondary m-1">Bajamar</button> 
+                  <button class="btn btn-outline-secondary m-1">Santiago del Teide</button> 
+                  <button class="btn btn-outline-secondary m-1">Puerto de la Cruz</button> 
+                  <button class="btn btn-outline-secondary m-1">San Cristóbal de la Laguna</button> 
+                  <button class="btn btn-outline-secondary m-1">San Juan de la Rambla</button> 
+                </div>
+                <div class="range my-2">
+                  <h6> <img src="assets/images/bookmark.png" class="img-fluid" alt="img"> Prix </h6>
+                  <input type="range" class="form-range" id="customRange1">
+                  <div class="d-flex justify-content-between">
+                    <h5>Prix min <br>
+                      50 EUR</h5>
+                      <h5>Prix max <br>
+                        3.500 EUR</h5>
+                  </div>
+                </div>
+                <div class="age my-2">
+                    <h6> <img src="assets/images/18+.png" class="img-fluid" alt="img"> Âge des d’aventuriers </h6>
+                    <button class="btn btn-outline-secondary m-1">+ de 6 ans</button> 
+                    <button class="btn btn-outline-secondary m-1">+ de 16 ans</button> 
+                    <button class="btn btn-outline-secondary m-1">+ de 18 ans</button> 
+                    <button class="btn btn-outline-secondary m-1">Retraité(e)</button> 
+                </div>
+                <div class="range my-3">
+                  <h6> <img src="assets/images/happy.png" class="img-fluid" alt="img">Nombre d’aventuriers</h6>
+                  <input type="range" class="form-range" id="customRange1">
+                  <div class="">
+                    <h5>Vous êtes :<br>
+                      7 aventuriers</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <h6> <img src="assets/images/filter.png" class="img-fluid" alt="img">Activités à Tenerife</h6>
+   
+                  <div class="form-group input-with-icon"> 
+                    <div class="input-icon">
+                      <i class="bi bi-search"></i>
+                    </div>
+                    <input type="text" class="form-control rounded-2 py-2" id="exampleInput" placeholder="Quelle activité souhaitez-vous vivre à Tenerife ?
+                    ">
+                    
+                  </div>
+                  <div class="form-check p-2 my-1 mx-3">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Plongée sous-marine
+                    </label>
+                  </div>
+                  <div class="form-check p-2 my-1 mx-3">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      RemRafting
+                    </label>
+                  </div>
+                  <div class="form-check p-2 my-1 mx-3">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Vélo
+                    </label>
+                  </div>
+                  <div class="form-check p-2 my-1 mx-3">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Survol en avion
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 col-md-6">
+                <!-- first card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 col-md-6">
+                <!-- first card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 col-md-6">
+                <!-- first card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <!-- second card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+                <!-- third card -->
+                <div class="card shadow my-3" style="width: 18rem;">
+                  <img src="assets/images/c3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
               </div>
             </div>
-            </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-lg-3 col-md-6"></div>
-            <div class="col-12 col-lg-3 col-md-6"></div>
-            <div class="col-12 col-lg-3 col-md-6"></div>
-          </div>
-        </div>
       </section>
     <!-- =================
     END FEATURE SECTION 
