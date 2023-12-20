@@ -166,10 +166,48 @@ section{
 }
 
 /* navbar */
-..navbar-brand{
-  margin-right: 5px!important;
+
+.navbars {
+  background-color: #fff;
+  padding: 10px;
 }
-.header-nav .center  .icon-whatsapp{
+
+.navbars-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.navbars a.logo {
+  width: 75%!important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.right-nav-img{
+  width: 100%!important;
+  width: 55px!important;
+  height:35px;
+  text-align: center;
+}
+
+.navbars a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.navbars-right {
+  float: right;
+  display: block;
+}
+
+
+ .header-nav .center  .icon-whatsapp{
   position: relative;
 }
 .header-nav .center i{
@@ -195,14 +233,15 @@ section{
 position: relative;
 }
 .dropdown-menu{
-  transform: translateX(-30%)!important;
+  transform: translate(1%,15%)!important;
   position: absolute;
-  padding: 10px 3px!important;
+  padding: 10px 20px!important;
+  z-index: 9;
 }
 
 .dropdown-menu .dropdown-item{
+  text-align: left!important;
 }
-
 
 
 
@@ -282,7 +321,8 @@ position: relative;
   border: 1px solid #64CD78;
   border-radius: 10px;
   position: relative;
-  transform: translateX(5%);
+  transform: translateX(1%);
+  margin-right: 0px!important;
   z-index:1;
 }
 
@@ -427,6 +467,11 @@ position: relative;
 
 
 
+@media screen and (max-width: 1200px){
+
+
+}
+
 
 
 /* Responsive */
@@ -440,19 +485,25 @@ position: relative;
     font-size: 15px;
   }
 
+  .right-nav-img{
+    width: 100%!important;
+    width: 55px!important;
+    height:40px;
+    text-align: center;
+  }
+
   .header-nav .center{
      display: none!important;
     }
 
     .dropdown-menu{
-      transform: translateX(-60%)!important;
+      transform: translate(1%,15%)!important;
       position: absolute;
       padding: 10px 3px!important;
     }
 
     .slick-slider {
       width: 93%;
-      height: 500px!important;
     }
     
 
@@ -488,14 +539,22 @@ position: relative;
     font-size: 15px;
   }
 
+  .right-nav-img{
+    width: 100%!important;
+    width: 126px!important;
+    height:40px;
+    text-align: center;
+  }
+
   .header-nav .center{
      display: none!important;
     }
 
     .dropdown-menu{
-      transform: translateX(-60%)!important;
+      top: -10;
+      transform: translate(-75%,12%)!important;
       position: absolute;
-      padding: 10px 3px!important;
+      padding: 10px 15px!important;
     }
 
     .slick-slider {
@@ -525,3 +584,27 @@ position: relative;
 
 
 
+
+@media screen and (max-width: 319px) {
+  .navbars a.logo {
+    width: 75%!important;
+    font-weight: bold;
+  }
+
+  .right-nav-img{
+    width: 100%!important;
+    width: 55px!important;
+    height:35px;
+    text-align: center;
+  }
+
+  .navbars a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .navbars-right {
+    float: none;
+  }
+}
