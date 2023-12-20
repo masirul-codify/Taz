@@ -76,14 +76,54 @@ a{
   width: 40%;
 }
 
+/* COLOR */
+.text-underline{
+  text-decoration: underline;
+  font-size: 30px;
+  color: #4F769A;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+.text-bold{
+  font-family: "Open Sans";
+  color: #4F769A;
+  font-weight: 700;
+}
+
+.text-opensans{
+  font-family: "Open Sans";
+  color: #255783;;
+  font-weight: 400;
+}
+
+.text-opensans-bold{
+  font-family: "Open Sans";
+  color: #255783;;
+  font-weight: 700;
+}
+
+.text-lato{
+  font-family: 'lato',sans-serif;
+  color: #255783;;
+  font-weight: 400;
+}
+
+.text-lato-bold{
+  font-family: 'lato',sans-serif;
+  color: #255783;;
+  font-weight: 700;
+}
+
+
 .bg-sky{
   background: #15d6d5;;
 }
 .bg-green{
-  background: #64CD78;
+  background: #64CE78;
 }
 .text-green{  
-  color: #64CD78;
+  color: #64CE78;
 }
 section{
   margin-top: 15px!important;
@@ -119,15 +159,8 @@ section{
 
 .topbar .icon i{
   margin-right: 3px;
-  color: yellow;
+  color: #FCEC1F;
   font-size: 30px;
-}
-.topbar .text{
-  text-decoration: underline;
-  font-size: 30px;
-  color: #255783;
-  font-weight: 400;
-  font-family: "Open Sans";
 }
 
 .notification {
@@ -192,7 +225,7 @@ section{
 .right-nav-img{
   width: 100%!important;
   width: 55px!important;
-  height:45px;
+  height:48px;
   text-align: center;
 }
 
@@ -210,6 +243,7 @@ section{
  .header-nav .center  .icon-whatsapp{
   position: relative;
 }
+
 .header-nav .center i{
   position: absolute;
   top: 0;
@@ -221,7 +255,8 @@ section{
 .header-nav .center h5{
   font-family: 'lato',sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  color: #255783;
+  font-weight: 700;
 }
 
 .header-nav .right .icons i{
@@ -293,6 +328,17 @@ position: relative;
     transform: scale(1);
   }
 }
+
+
+.hero-bottom h6{
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #888D8E;
+  font-size: 15px;
+}
+
+
+
 /* SLICK SLIDER */
 
 .slick-slider {
@@ -342,20 +388,18 @@ position: relative;
  }
 
 .card-left h1{
-  font-size: 50px!important;
-  line-height: 52px!important;
-  color: #4b5a5d!important;
-  font-weight: 700!important;
-  font-family: "Lato"!important;
+  font-size: 45px;
+  color: #4b5a5d;
+  font-weight: 700;
+  font-family: "Lato";
 }
 .card-left h3{
   font-family: 'lato',sans-seif;
-  font-size: 28px;
-  font-weight:400;
+  font-size: 30px;
+  font-weight:700;
+  color: #4B5A5D;
 }
-.card-left h3{
-  
-}
+
 .icon-whatsapp {
   position: relative;
 }
@@ -427,7 +471,7 @@ position: relative;
 
 /* FEATURE */
 .feature .title{
-  font-size: 50px;
+  font-size: 35px;
   line-height: 39px;
   color: #255783;
   font-weight: 700;
@@ -515,7 +559,7 @@ position: relative;
       font-size: 30px;
     }
     .card-left h3{
-      font-size: 15px;
+      font-size: 25px;
     }
     .card-left .card-btn {
       padding-left: 55px;
@@ -535,7 +579,7 @@ position: relative;
     font-size: 15px;
   }
 
-  .topbar .text{
+  .topbar .top-right-text{
     font-size: 15px;
   }
 
@@ -557,6 +601,10 @@ position: relative;
       padding: 10px 15px!important;
     }
 
+    .hero-bottom h6{
+      font-size: 12px;
+    }
+    
     .slick-slider {
       width: 93%;
     }
@@ -567,10 +615,10 @@ position: relative;
     }
     
     .card-left h1{
-      font-size: 30px;
+      font-size: 25px;
     }
     .card-left h3{
-      font-size: 15px;
+      font-size: 18px;
     }
     .card-left .card-btn {
       padding-left: 55px;
@@ -637,6 +685,13 @@ position: relative;
     width: 825px!important;
     height:45px;
     text-align: center;
+  }
+
+}
+
+@media only screen and  (min-width: 1300px) {
+  .container{
+    min-width: 1250px!important;
   }
 
 }
